@@ -1,0 +1,89 @@
+.form-container {
+  background: linear-gradient(#212121, #212121) padding-box,
+    linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  gap: 10px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  height: 55vh;
+  width: 50vw; /* Set width to 50% of viewport width */
+  max-width: 600px; /* Set a maximum width */
+  margin: 0 auto; /* Center the container */
+}
+
+.form-container .form {
+  width: 100%; /* Full width of the form container */
+}
+
+.form-container .form-group {
+  width: 100%; /* Full width of the form group */
+}
+
+.form-container .form-group textarea {
+  width: 100%; /* Full width of the textarea */
+  height: 50vh; /* Set textarea height to 50% of viewport height */
+  max-width: 50vw; /* Limit textarea width to 50% of viewport width */
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+  resize: none;
+}
+
+.form-container .form-group textarea::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+/* Media Query for Tablets and Smaller Devices */
+@media (max-width: 768px) {
+  .form-container {
+    width: 90vw; /* Set width to 90% of viewport width */
+    padding: 24px 16px; /* Adjust padding */
+    max-width: none; /* Remove max-width restriction */
+  }
+
+  .form-container .form-group textarea {
+    max-width: 90vw; /* Limit textarea width to 90% of viewport width */
+    height: 50vh; /* Adjust textarea height */
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .form-container {
+    width: 100vw; /* Set width to 100% of viewport width */
+    padding: 16px 12px; /* Adjust padding */
+    max-width: none; /* Remove max-width restriction */
+  }
+
+  .form-container .form-group textarea {
+    max-width: 100vw; /* Limit textarea width to 100% of viewport width */
+    height: 50vh; /* Adjust textarea height */
+  }
+}
+
+/* Media Query for Long Devices (Landscape Orientation) */
+@media (min-aspect-ratio: 3/2) {
+  .form-container {
+    width: 75vw; /* Set width to 75% of viewport width */
+    max-width: none; /* Remove max-width restriction */
+  }
+
+  .form-container .form-group textarea {
+    max-width: 75vw; /* Limit textarea width to 75% of viewport width */
+  }
+}

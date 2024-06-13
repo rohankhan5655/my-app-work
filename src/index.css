@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-size: 12px;
+  font-family: sans-serif;
+  background: #2c3e50;
+}
+h1 {
+  color: #ecf0f1;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: "Cherry Swash", cursive;
+}
+h2 {
+  margin: 20px 40px;
+  text-align: center;
+  font-size: 30px;
+  color: #ecf0f1;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: "Cherry Swash", cursive;
+}
+
+span {
+  color: #2bd6b4;
+}
+p {
+  width: 100%;
+  text-align: center;
+  color: #ecf0f1;
+  font-family: "Cherry Swash", cursive;
+  font-size: 16px;
+}

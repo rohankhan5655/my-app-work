@@ -1,0 +1,83 @@
+nav {
+  margin: 30px auto 0;
+  align-items: center; /* corrected typo */
+  position: relative;
+  width: 318px;
+  height: 50px;
+  background-color: #34495e;
+  border-radius: 8px;
+  font-size: 0;
+}
+
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0s;
+  border-radius: 8px;
+}
+
+a:nth-child(1) {
+  width: 100px;
+}
+
+a:nth-child(2) {
+  width: 105px;
+}
+
+a:nth-child(3) {
+  width: 110px;
+}
+
+.start-home.active ~ .animation {
+  width: 100px;
+  left: 0;
+  background-color: #1abc9c;
+}
+
+.start-contact.active ~ .animation {
+  width: 110px;
+  left: 205px;
+  background-color: #3498db;
+}
+
+.start-about.active ~ .animation {
+  width: 105px;
+  left: 100px;
+  background-color: #e74c3c;
+}
+nav .start-home:hover {
+  background-color: #1abc9c;
+  transition: all 0.5s ease 0s;
+  border-radius: 8px;
+}
+
+nav .start-about:hover {
+  background-color: #e74c3c;
+  transition: all 0.5s ease 0s;
+  border-radius: 8px;
+}
+
+nav .start-contact:hover {
+  background-color: #3498db;
+
+  height: 100%;
+
+  transition: all 0.5s ease 0s;
+  border-radius: 8px;
+}
